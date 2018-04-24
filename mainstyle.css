@@ -1,0 +1,48 @@
+body {
+	background-color: rgba(220,31,41,0.9);
+	min-width: 900px;
+}
+
+#nav-bar {
+	display: flex;
+	align-items: center;
+	padding: 0 50px;
+	/*background-color: rgb(250, 233, 53);*/
+}
+
+#logo {
+	flex: 1
+}
+
+#logo img {
+	display: block;
+	height: 250px;
+	background-color: transparent;
+}
+
+#menu {
+	flex: 1;
+	display: flex;
+}
+
+#menu ul  {
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	list-style-type: none;
+	
+}
+
+#menu ul li {
+	cursor: pointer;
+	text-align: center;
+	background-color: transparent;
+	flex: 1;
+	font-size: 180%;
+	padding: 5px 18px;
+	margin: 10px;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 5px;
+	border-radius: 10px;
+}
