@@ -1,5 +1,5 @@
 body {
-	background-color: rgba(220,31,41,0.9);
+	background: linear-gradient(99deg,rgba(220,31,41,0.75),rgba(220,31,41,0.9));
 	min-width: 900px;
 	margin: 0;
 	font-family: 'Open Sans';
@@ -8,7 +8,9 @@ body {
 #nav-bar {
 	display: flex;
 	align-items: center;
-	padding: 0 0 0 50px;
+	padding: 10px 0 10px 50px;
+	/*background-color: rgba(0,0,0,0.1);*/
+	background: linear-gradient(180deg,rgba(0,0,0,0.3),transparent);
 }
 
 #logo {
@@ -36,6 +38,7 @@ body {
 	display: flex;
 	list-style-type: none;
 	background-color: rgb(40, 40, 40);
+	background: linear-gradient(180deg,rgb(70, 70, 70),rgb(40, 40, 40));
 	justify-content: space-around;
 	margin: 0 0 5px 0;
 	width: 100%;
@@ -60,3 +63,92 @@ body {
 #menu ul li:last-child {
 	margin-right: 0;
 }
+
+#home {
+	display: flex;
+	align-items: stretch;
+}
+
+#matches {
+	flex: 2;
+}
+
+#match {
+	margin: 30px;
+	background-color: rgb(250, 233, 250);
+	text-align: center;
+}
+
+#match-header {
+	background-color: rgb(230, 215, 230);
+}
+
+#match-match {
+	display: flex;
+}
+
+#match-match h3 {
+	flex: 1;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#highlight {
+	flex: 1;
+	background-color: rgb(250, 233, 250);
+	margin: 30px 30px 30px 0px;
+	padding: 0px;
+}
+#highlight h1 {
+	text-align: center;
+}
+#highlight h2 {
+	background-color: rgb(230, 215, 230);
+	padding: 10px;
+}
+
+/*-----------------------------------------*/
+#schedule {
+	display: none;
+}
+.header {
+	background: linear-gradient(to right,transparent,rgb(230, 215, 230),transparent);
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
+}
+
+#schedule-table {
+	width: 90%;
+	margin: 10px auto;
+	border-collapse: collapse;
+	/*background-color: rgb(255, 205, 220);*/
+	background: linear-gradient(to right,rgba(230, 215, 230,0.5),rgb(230, 215, 230),rgba(230, 215, 230,0.5));
+}
+
+#schedule-table th {
+	font-size: 125%;
+	padding: 5px 0;
+}
+
+#schedule-table tr {
+	font-size: 125%;
+}
+
+#schedule-table td, #schedule-table th {
+	padding: 10px;
+	text-align: center;
+}
+
+#schedule-table tr:nth-child(even) {
+	background: linear-gradient(to right,rgba(250, 215, 230,0.5),rgb(250, 215, 230),rgba(250, 215, 230,0.5));
+}
+
+#roster {
+	display: none;
+}
+
+
+
+
+
