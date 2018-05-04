@@ -1,22 +1,24 @@
 $(document).ready(function() {
 
-	$(".menu-but").each(function() {
-		$(this).click(function() {
-			$name = $(this).attr('id');
+	//This code toggles prompts when pressing the buttons at the bottom of the tables
+	$("#add-player-but").click(function() {
+		$("#add-player-div").show();
+		$("#del-player-div").hide();
+		$("#ups-player-div").hide();
+	});
 
-			console.log("clicked" + $name);
+	$("#del-player-but").click(function() {
+		$("#add-player-div").hide();
+		$("#del-player-div").show();
+		$("#ups-player-div").hide();
+	});
 
-			$(".content-page").each(function() {
-				if (($(this).attr('id') + "-but") != $name) {
-					//hide these
-					$(this).fadeOut(200);
-				} else {
-					//show this one
-					$(this).fadeIn(400);
-				}
-			});
-		});
-	})
+	$("#ups-player-but").click(function() {
+		$("#add-player-div").hide();
+		$("#del-player-div").hide();
+		$("#ups-player-div").show();
+	});
+
 
 	
 });
